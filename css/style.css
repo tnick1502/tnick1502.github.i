@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Quicksand Light';
+	src: url('fonts/Quicksand.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	font-family: "Quicksand Light";
+	font-size: "16px";
+	font-weight: 100;
+	color: #808080;
+}
+
+div {
+	padding: 20px;
+	margin: 20px;
+}
+
+table {
+   cellpadding=20px;
+}
+
+p {
+	padding: 10px;
+}
+
+h3 {
+	padding: 10px;
+}
+
+.line {
+	width: 50px;
+	align: left;
+}
+
+.photo {
+	width: 100%;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.icons {
+	width: 40px;
+	margin: 10px;
+}
+
+.about {
+	border: 3px solid; 
+	width: calc(60%);
+	height: 500px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.info {
+	border: 3px solid; 
+	width: calc(30%);
+	height: 500px;
+	padding: 20px;
+	margin: 20px auto;
+}
+
+
+.skills {
+	border: 3px solid; 
+	width: calc(30%);
+	height: 500px;
+	padding: 20px;
+	margin: 20px auto;
+}
+
+.skills ul {
+	flex-flow: row nowrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.education {
+	border: 3px solid; 
+	width: calc(60%);
+	margin: 20px auto;
+	height: 500px;
+	padding: 20px;
+}
+
+.education p {
+	padding: 3px;
+	margin: 3px;
+}
+
+.work {
+	border: 3px solid; 
+	margin: 0 auto;
+	padding: 20px;
+}
