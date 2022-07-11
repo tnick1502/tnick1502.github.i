@@ -13,9 +13,9 @@ body {
 }
 
 div {
+	float: left; /*Задаем обтекание*/
 	padding: 20px;
-	margin: 20px;
-}
+    }
 
 table {
    cellpadding=20px;
@@ -30,15 +30,12 @@ h3 {
 }
 
 .line {
-	width: 50px;
-	align: left;
 }
 
 .photo {
 	width: 200px;
 	border-radius: 100px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .icons {
@@ -51,7 +48,7 @@ h3 {
 	width: calc(60%);
 	height: 500px;
 	padding: 20px;
-	margin: 0 auto;
+	margin: 20px 20px;
 }
 
 .info {
@@ -59,7 +56,7 @@ h3 {
 	width: calc(30%);
 	height: 500px;
 	padding: 20px;
-	margin: 20px auto;
+	margin: 20px 20px;
 }
 
 
@@ -68,7 +65,7 @@ h3 {
 	width: calc(30%);
 	height: 500px;
 	padding: 20px;
-	margin: 20px auto;
+	margin: 20px 20px;
 }
 
 .skills ul {
@@ -81,7 +78,7 @@ h3 {
 .education {
 	border: 3px solid; 
 	width: calc(60%);
-	margin: 20px auto;
+	margin: 20px 20px;
 	height: 500px;
 	padding: 20px;
 }
@@ -93,6 +90,16 @@ h3 {
 
 .work {
 	border: 3px solid; 
-	margin: 0 auto;
+	margin: 20px 20px;
 	padding: 20px;
+}
+
+.work p {
+	padding: 0 0;
+	margin: 0 0;
+}
+
+.work h3 {
+	padding: 0 0;
+	margin: 0 0;
 }
