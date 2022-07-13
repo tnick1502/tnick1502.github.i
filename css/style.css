@@ -12,17 +12,12 @@ body {
 	color: #808080;
 }
 
-div {
-	float: left; /*Задаем обтекание*/
-	padding: 20px;
-	margin: 20% 20%;
-    }
-
 th, td {
    padding: 0px 0px;
 }
 
 p {
+	text-align: justify;
 	padding: 10px;
 }
 
@@ -43,26 +38,13 @@ h3 {
 
 
 .flex_container {
-	display: block;
-	width: 1500px;
-	margin: 0 0 0 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.first_container {
+.first_container, .second_container, .third_container {
 	display: flex;
-	width: 1200px;
-	margin: 0 0 0 0;
-}
-
-.second_container {
-	display: flex;
-	width: 1200px;
-	margin: 0 0 0 0;
-}
-
-.third_container {
-	display: flex;
-	width: 1200px;
 	margin: 0 0 0 0;
 }
 
