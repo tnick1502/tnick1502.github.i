@@ -19,7 +19,7 @@ body {
 	flex-direction: column;
 }
 
-@media handheld and (min-width: 500px) {
+@media all and (max-width: 700px) {
 	.first_container, .second_container, .third_container {
 		display: flex;
 		flex-direction: column;
