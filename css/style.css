@@ -7,10 +7,31 @@
 
 body {
 	font-family: "Quicksand Light";
-	font-size: "20px";
 	font-weight: 100;
 	color: #808080;
 }
+
+@media handheld and (min-width: 500px) {
+	.first_container, .second_container, .third_container {
+		display: center;
+		margin: 0 0 0 0;
+	}
+	body {
+		font-size: "25px";
+		color: #808080;
+	}
+  }
+
+@media all and (min-width: 800px) {
+	.first_container, .second_container, .third_container {
+		display: flex;
+		margin: 0 0 0 0;
+	}
+	body {
+		font-size: "2px";
+	}
+}
+
 
 th, td {
    padding: 0px 0px;
