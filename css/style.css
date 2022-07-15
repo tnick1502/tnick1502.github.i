@@ -41,6 +41,18 @@ body {
 }
 
 
+.table_work_timedelta {
+	vertical-align: top; 
+	padding-top: 22px; 
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+.table_work_data {
+	vertical-align: top; 
+	padding-right: 10px;
+}
+
 th, td {
    padding: 0px 0px;
 }
@@ -136,4 +148,3 @@ IMG.displayed {
 	padding: 0 0;
 	margin: 0 0;
 }
-
