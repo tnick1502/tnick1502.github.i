@@ -8,7 +8,6 @@
 body {
 	font-family: "Quicksand Light";
 	font-weight: 100;
-	color: #808080;
 }
 
 .flex_container {
@@ -18,18 +17,6 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
-
-@supports (-webkit-touch-callout: none){
-	.first_container, .second_container, .third_container {
-		display: flex;
-		flex-direction: column;
-		margin: 0 0 0 0;
-	}
-	body {
-		font-size: "30px";
-	}
-}
-
 
 @media all and (max-width: 700px) {
 	.first_container, .second_container, .third_container {
@@ -84,11 +71,13 @@ h3 {
 	flex-basis: 30%;
 	flex-grow: 1;
 	margin: 0 0 0 0;
+	background: repeating-linear-gradient(-60deg, #dce0e0 0, #dce0e0 1px, transparent 1px, transparent 7px);
 }
 .skills {
 	flex-basis: 50%;
 	flex-grow: 1;
 	margin: 0 0 0 0;
+	background: repeating-linear-gradient(-60deg, #dce0e0 0, #dce0e0 1px, transparent 1px, transparent 7px);
 }
 .education {
 	flex-basis: 50%;
