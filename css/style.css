@@ -8,6 +8,7 @@
 body {
 	font-family: "Quicksand Light";
 	font-weight: 100;
+	font-size: 14pt;
 }
 
 .flex_container {
@@ -36,7 +37,7 @@ body {
 		margin: 0 0 0 0;
 	}
 	body {
-		font-size: "20px";
+		font-size: "25px";
 	}
 }
 
@@ -74,6 +75,12 @@ h3 {
 	padding: 10px;
 }
 
+.top {
+	flex-basis: 100%;
+	margin: 0 0 0 0;
+	background: repeating-linear-gradient(-60deg, #dce0e0 0, #dce0e0 1px, transparent 1px, transparent 7px);
+}
+
 .about {
 	flex-basis: 70%;
 	flex-grow: 3;
@@ -106,21 +113,32 @@ IMG.displayed {
 	width: 200px;
 	border-radius: 100px;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto;
+ }
 
 .icons {
 	width: 40px;
 	margin: 10px;
 }
 
-.about, .info, .skills, .education, .work {
+.about, .info, .skills, .education, .work, .top {
 	border: 1px solid; 
 	padding: 20px;
 	margin: 20px 20px;
 }
 
+.about:hover, .info:hover, .skills:hover, .education:hover, .work:hover {
+	box-shadow: 0px 0px 10px darkgrey;
+}
+
+.top {
+	height: 100px;
+	text-align: center;
+}
+
+
 .about, .education {
-	height: 500px;
+	height: 550px;
 }
 
 .info p {
@@ -128,7 +146,7 @@ IMG.displayed {
 }
 
 .info, .skills {
-	height: 500px;
+	height: 550px;
 }
 
 .skills ul {
@@ -147,4 +165,15 @@ IMG.displayed {
 .work p {
 	padding: 0 0;
 	margin: 0 0;
+}
+
+
+a[href^="tel:"] {
+	color: #000000;
+  }
+
+a[href^="mailto:"] {
+font-size: 16px;
+line-height: 32px;
+color: #000000;
 }
