@@ -170,6 +170,10 @@ IMG.displayed {
 	font-size: 20pt;
 }
 
+.menu:active {
+	font-size: 14pt;
+}
+
 .top {
 	height: 100px;
 	text-align: center;
