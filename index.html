@@ -11,6 +11,7 @@
 	<!-- Значок прикрепленной вкладки Safari -->
 	<link rel="mask-icon" href="images/web.svg">
 
+
 </head>
 
 <body>
@@ -22,10 +23,32 @@
 				<h1>WEB DEVELOPER</h1>
 			</div>
 		</div>
+
+		<div class="menu_container">
+			<div class="menu">
+				<a class="menu_items" data-goto="1" href="#">ABOUT</a>
+			</div>
+
+			<div class="menu">
+				<a class="menu_items" data-goto="2" href="#">INFO</a>
+			</div>
+
+			<div class="menu">
+				<a class="menu_items" data-goto="3" href="#">SKILLS</a>
+			</div>
+
+			<div class="menu">
+				<a class="menu_items" data-goto="4" href="#">EDUCATION</a>
+			</div>
+
+			<div class="menu">
+				<a class="menu_items" data-goto="5" href="#">CAREER</a>
+			</div>
+		</div>
 		
 		<div class="first_container">
 
-			<div class="about">
+			<div class="about" id="1">
 				<img src="images/pen-to-square.svg" alt="pen" class="icons">
 				<hr class="line">
 				<h3>Обо мне</h3>
@@ -35,7 +58,7 @@
 			</div>
 
 
-			<div class="info">
+			<div class="info" id="2">
 				<IMG class="displayed" src="images/me.jpg" alt="me" class="photo">
 				<hr class="line">
 				<p><b>Тишин Никита Романович</b></p>
@@ -51,7 +74,7 @@
 
 		<div class="second_container">
 			
-			<div class="skills">
+			<div class="skills" id="3">
 				<img src="images/star.svg" alt="star" class="icons">
 				<hr class="line">
 
@@ -107,7 +130,7 @@
 
 			</div>
 
-			<div class="education">
+			<div class="education" id="4">
 				<img src="images/book-outline.svg" alt="star" class="icons">
 				<hr class="line">
 				<h3>Образование</h3>
@@ -129,7 +152,7 @@
 			</div>
 		</div>
 
-		<div class="third_container">
+		<div class="third_container" id="5">
 			<div class="work">
 				<img src="images/code.svg" alt="star" class="icons">
 				<hr class="line">
@@ -215,5 +238,6 @@
 		</div>
 
 	</div>
+	<script src="/scripts/script.js"></script>
 </body>
 </html>
