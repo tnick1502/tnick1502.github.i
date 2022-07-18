@@ -117,6 +117,11 @@ a[href*="#"] {
 	margin: 0 0 0 0;
 	background: repeating-linear-gradient(-60deg, #dce0e0 0, #dce0e0 1px, transparent 1px, transparent 7px);
 }
+
+.info p {
+	text-align: center;
+}
+
 .skills {
 	flex-basis: 50%;
 	flex-grow: 1;
