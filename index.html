@@ -54,10 +54,10 @@
 				<img src="images/pen-to-square.svg" alt="pen" class="icons">
 				<hr class="line">
 				<h3>Обо мне</h3>
-				<p>На данный момент руковожу группой математиков-разработчиков. В команде, помимо менеджмента, занимаюсь и desktop веб-разработкой на python</p>
+				<p class="print">На данный момент руковожу группой математиков-разработчиков. В команде, помимо менеджмента, занимаюсь и desktop веб-разработкой на python</p>
 				<h3>Увлечения</h3>
 				<p><img src="images/boat.svg" alt="pen" class="icons"> <img src="images/guitar.svg" alt="pen" class="icons"> <img src="images/snowboard.svg" alt="pen" class="icons"></p>
-				<p>Парусный спорт | Гитара | Сноуборд</p>
+				<p class="print">Парусный спорт | Гитара | Сноуборд</p>
 			</div>
 
 
@@ -248,18 +248,17 @@
 	</div>
 	<script src="script.js" type="text/javascript"></script>
 	<script src="anime.min.js" type="text/javascript"></script>
+	<script src="typeit.min.js"></script>
 	<script>
 		anime({
 			targets: '.about',
-			keyframes: [
-				{rotate: [-90, 0] },
-			],
+			translateX: [-500, 0],
 			easing: 'easeInOutQuad'
 		});
 		
 		anime({
 			targets: '.info',
-			translateX: [800, 0],
+			translateX: [500, 0],
 			easing: 'easeInOutQuad'
 		});
 		
@@ -280,6 +279,8 @@
 			translateY: [1000, 0],
 			easing: 'easeInOutQuad'
 		});
+
+		new TypeIt(".print").go();
 
 	</script>
 </body>
