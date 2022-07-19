@@ -247,5 +247,40 @@
 
 	</div>
 	<script src="script.js" type="text/javascript"></script>
+	<script src="anime.min.js" type="text/javascript"></script>
+	<script>
+		anime({
+			targets: '.about',
+			keyframes: [
+				{rotate: [-90, 0] },
+			],
+			easing: 'easeInOutQuad'
+		});
+		
+		anime({
+			targets: '.info',
+			translateX: [800, 0],
+			easing: 'easeInOutQuad'
+		});
+		
+		anime({
+			targets: '.skills',
+			translateY: [500, 0],
+			easing: 'easeInOutQuad'
+		});
+		
+		anime({
+			targets: '.education',
+			translateY: [1000, 0],
+			easing: 'easeInOutQuad'
+		});
+
+		anime({
+			targets: '.work',
+			translateY: [1000, 0],
+			easing: 'easeInOutQuad'
+		});
+
+	</script>
 </body>
 </html>
