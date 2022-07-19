@@ -171,12 +171,8 @@ IMG.displayed {
 	box-shadow: 0px 0px 10px darkgrey;
 }
 
-.menu:hover {
+.menu:hover:not(.active) {
 	font-size: 20pt;
-}
-
-.menu:active {
-	font-size: 14pt;
 }
 
 .top {
