@@ -60,11 +60,10 @@ function animate() {
 function stop() {
   anime.remove(buttonEl);
   anime({
+    targets: buttonEl,
     translateY: 0,
     rotate: 0,
-    direction: 'alternate',
-    easing: 'easeInOutSine',
-    loop: false,
+    easing: 'linear',
   });
 }
 
@@ -89,11 +88,12 @@ function animate2() {
 function stop2() {
   anime.remove(buttonE2);
   anime({
-    translateY: 0,
+    targets: buttonE2,
     rotate: 0,
-    loop: false
+    easing: 'linear',
   });
 }
 
+
 buttonE2.addEventListener('mouseenter', animate2, false);
-buttonE2.addEventListener('mouseleave', stop2, false);
+buttonE2.addEventListener('mouseleave', stop2, false); ь
