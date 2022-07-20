@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+})
+
+
 const navItems = document.querySelectorAll(".menu_items[data-goto]");
 if (navItems.length > 0) {
   navItems.forEach((item) => {
