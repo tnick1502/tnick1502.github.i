@@ -50,7 +50,7 @@ function animate() {
   anime({
     targets: buttonEl,
     translateY: [0, -15],
-    rotate: [-15, 15],
+    rotate: [-10, 10],
     direction: 'alternate',
     easing: 'easeInOutSine',
     loop: true,
@@ -78,7 +78,7 @@ function animate2() {
   anime.remove(buttonE2);
   anime({
     targets: buttonE2,
-    rotate: [15, -15],
+    rotate: [0, 30],
     direction: 'alternate',
     easing: 'easeInOutSine',
     loop: true,
@@ -96,4 +96,21 @@ function stop2() {
 
 
 buttonE2.addEventListener('mouseenter', animate2, false);
-buttonE2.addEventListener('mouseleave', stop2, false); ь
+buttonE2.addEventListener('mouseleave', stop2, false);
+
+
+
+var buttonE3 = document.querySelector('#audio_svg3');
+
+function animate3() {
+  anime.remove(buttonE3);
+  anime({
+    targets: buttonE3,
+    rotate: 360,
+    easing: 'easeInOutSine',
+  });
+}
+
+
+buttonE3.addEventListener('mouseenter', animate3, false);
+buttonE3.addEventListener('mouseleave', stop3, false);
