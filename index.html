@@ -53,9 +53,9 @@
 			<div class="about" id="1">
 				<img src="images/pen-to-square.svg" alt="pen" class="icons">
 				<hr class="line">
-				<h3>Обо мне</h3>
-				<p class="print">На данный момент руковожу группой математиков-разработчиков. В команде, помимо менеджмента, занимаюсь desktop и веб-разработкой на python.</p>
-				<h3>Увлечения</h3>
+				<h3>About</h3>
+				<p class="print">At the moment I lead a group of mathematicians-developers. In the team, in addition to management, I am engaged in desktop and web development in python.</p>
+				<h3>Hobbies</h3>
 				<p><img src="images/boat.svg" alt="pen" class="icons" id="audio_svg1">
 					<audio id="audio1">
                     <source src="ttsgb.mp3"></source>
@@ -65,14 +65,14 @@
                     <source src="atal.mp3"></source>
 					</audio>
 				  <img src="images/snowboard.svg" alt="snowboard" class="icons" id="audio_svg3"></p>
-				<p>Парусный спорт | Гитара | Сноуборд</p>
+				<p>Sailing | Playing guitar | Snowboarding</p>
 			</div>
 
 
 			<div class="info" id="2">
 				<IMG class="displayed" src="images/me.jpg" alt="me" class="photo">
 				<hr class="line">
-				<p><b>Тишин Никита Романович</b></p>
+				<p><b>Tishin Nikita</b></p>
 				<p><b>03.02.1993</b></p>
 				<p><a href="tel:+79096562200"><b>+7 (909) 656-22-00</b></a></p>
 				<p><a href="mailto:tnick1502@mail.ru"><b>tnick1502@mail.ru</b></a></p>
@@ -152,15 +152,15 @@
 				<h3>Образование</h3>
 				<ul>
 					<li>
-						<h4>МГТУ им. Н.Э. Баумана, 2017</h4>
-						<p>Бакалавр</p>
-						<p>Факультет Робототехники и комплексной автоматизации, кафедра прикладной механиеи</p>
+						<h4>Bauman Moscow State Technical University, 2017</h4>
+						<p>Bachelor</p>
+						<p>Faculty of Robotics and Integrated Automation, Department of Applied Mechanics</p>
 					</li>
 
 					<li>
-						<h4>РТУ МИРЭА, 2019</h4>
-						<p>Магистр</p>
-						<p>Факультет Кибернетики, кафедра Управления в технических системах</p>
+						<h4>Russian Technological University MIREA, 2019</h4>
+						<p>Master of Science</p>
+						<p>Faculty of Cybernetics, Department of Control in Technical Systems</p>
 					</li>
 
 
@@ -172,79 +172,79 @@
 			<div class="work">
 				<img src="images/code.svg" alt="star" class="icons">
 				<hr class="line">
-				<h3>Опыт работы</h3>
+				<h3>Experience</h3>
 				<table>
 
 					<tr>
 						<td class="table_work_data">
-							<h4>АО МОСТДОРГЕОТРЕСТ</h4>
-							<h5>Руководитель отдела инновационных технологий</h5>
-							<h5>Апрель 2020 — по настоящее время</h5>
+							<h4>AO MOSTDORGEOTREST</h4>
+							<h5>Head of Innovative Technologies Department</h5>
+							<h5>April 2020 — now</h5>
 
-							<p>Основные используемые фреймворки и библиотеки: бэкенд: fastapi, numpy, scipy, postgresql, django. 
-							фронтенд: чистый js, react
-							десктоп: pyqt5
+							<p>Main used frameworks and libraries: backend: fastapi, numpy, scipy, postgresql, django. 
+							frontend: js, react
+							desktop: pyqt5
 
-							За время работы реализованы следующие проекты:</p>
+							During the work the following projects were implemented:</p>
 
 							<ul>
 								<li>
-									<p class="bolt_p">Комплекс обработки механических и динамических испытаний в гетерогенных средах.</p><p>Комплекс написан на Python. Модель системы была написана с использованием библиотек numpy и scipy. Интерфейс написан на pyqt и matplotlib. Для формирования отчетов используется reportlab. Сначала весь комплекс программировал лично, позже при расширении команды новые виды обработки и моделирования разрабатывали новые сотрудники.</p>
+									<p class="bolt_p">Complex for processing mechanical and dynamic tests in heterogeneous environments.</p><p>The complex is written in Python. The system model was written using the numpy and scipy libraries. The interface is written in pyqt and matplotlib. Reportlab is used to generate reports. At first, the whole complex was programmed personally, later, when the team expanded, new types of processing and modeling were developed by new employees.</p>
 								</li>
 
 								<li>
-									<p class="bolt_p">Dashboard’а для компании.</p><p>Бэкенд написал сам на fastapi. Суть проекта: отдельным потоком парсятся различные данные с разных документов компании(выданные протоколы, размер выплат и тд) и записываются в бд, далее api предоставляет данные для фронта, надписанного на реакт. Некоторые данные доступны только авторизированным пользователям.</p>
+									<p class="bolt_p">Company Dashboard.</p><p>The essence of the project: various data is parsed in a separate stream from different documents of the company (issued protocols, the amount of payments, etc.) and written to the database, then the api provides data for the front, inscribed on the react. Some data is available only to authorized users. Stack: fastapi, react, sqlite3.</p>
 								</li>
 
 								<li>
-									<p class="bolt_p">Сервис georeport.ru по аутентификации протоколов испытаний</p><p>При обработке испытаний результаты отправляются веб сервис и сохраняются в бд, после чего сервис возвращает qr код, содержащий гет запрос с идентификатором опыта, ведущий на страницу результатов протокола. Далее этот we размещается на самом протоколе. Написал бэкенд на fastapi с бд postgresql. Фронтенд на чистом js.</p>
+									<p class="bolt_p">Service georeport.ru for authentication of test reports</p><p>Service for data protection of laboratory reports. Duplicates report data to the server and provides this data via a special link, which is placed on the report in the form of a qr code. Stack: fastapi, postgresql, js.</p>
 								</li>
 
 								<li>
-									<p class="bolt_p">Телеграмм бот.</p><p>Библиотеки: aiogram и aiohttp. Для парсинга данных и информирования сотрудников компании о текущей зарплате, днях рождения сотрудников и тд. Связан с сервером dashboard.</p>
+									<p class="bolt_p">Telegram bot.</p><p>Stack: aiogram and aiohttp. For parsing data and informing the company's employees about the current salary, employees birthdays, etc. Connected to the dashboard server.</p>
 								</li>
 
 								<li>
-									<p class="bolt_p">Различные проекты для автоматизации бизнеса.</p><p>Вроде скриптов для маркировки ватермаркой или перевыгонки pdf отчетов и многие другие.</p>
+									<p class="bolt_p">Various projects for business automation.</p><p>Scripts for watermarking or redistribution of pdf reports and many others.</p>
 								</li>
 							</ul>
 
-							<p>Как руководитель отдела занимаюсь формированием команды разработчиков, набором сотрудников в отдел и их обучением.
+							<p>As the head of the department, I am engaged in the formation of a development team, the recruitment of employees in the department and their training.
 
-							Ежегодно представляю компанию на научных конференциях в области инженерных изысканий, проектирования и строительства, мкэ комплексов.
+							Every year I represent the company at scientific conferences in the field of engineering surveys, design and construction, MCE complexes.
 
-							Читаю лекции на курсах повышения квалификации в учебном центре компании.</p>
+							I give lectures at advanced training courses at the company's training center.</p>
 						</td>
 					</tr>
 
 					<tr>
 						<td class="table_work_data">
 							<hr class="line">
-							<h4>АО МОСТДОРГЕОТРЕСТ</h4>
-							<h5>Инженер-расчетчик</h5>
-							<h5>Август 2019 — Апрель 2020</h5>
-							<p>Лабораторное определение механических и динамических параметров грунтов, написание программ по обработке результатов эксперимента на python, VBA. Проведение КЭ расчетов (plaxis, midas).
-							Работа с базами данных. Знание библиотек matplotlib, numpy, scipy, pyqt5, работа с sqlite3. Опыт коммерческой разработки.</p>
+							<h4>AO MOSTDORGEOTREST</h4>
+							<h5>Strength engineer</h5>
+							<h5>August 2019 — April 2020</h5>
+							<p>Laboratory determination of the mechanical and dynamic parameters of soils, writing programs for processing the results of the experiment in python, VBA. Carrying out FE calculations (plaxis, midas).
+							Working with databases. Working with libraries matplotlib, numpy, scipy, pyqt5, working with sqlite3</p>
 						</td>
 					</tr>
 
 					<tr>
 						<td class="table_work_data">
 							<hr class="line">
-							<h4>ЦПКТ АТ МАИ</h4>
-							<h5>Инженер-конструктор 3 категории</h5>
-							<h5>Февраль 2018 — Февраль 2019</h5>
-							<p>Разработка деталей и узлов самолета в пк Siemens NX, чертежей в Autocad и Компас, ведение кд в Siemens Teamcenter, расчёт на прочность узлов.</p>
+							<h4>Center for Design Technologies of Aviation Engineering of the Moscow Aviation Institute</h4>
+							<h5>Design engineer, 3kat</h5>
+							<h5>February 2018 — February 2019</h5>
+							<p>Development of aircraft parts and assemblies in the Siemens NX PC, drawings in Autocad and Compass, maintenance of design documentation in Siemens Teamcenter, calculation of the strength of the assemblies.</p>
 						</td>
 					</tr>
 
 					<tr>
 						<td class="table_work_data">
 							<hr class="line">
-							<h4>ООО 'Благодар'</h4>
-							<h5>Инженер</h5>
-							<h5>Август 2014 — Июнь 2017</h5>
-							<p>Разработка чертежей.</p>
+							<h4>OOO Blagodar</h4>
+							<h5>Engineer</h5>
+							<h5>August 2014 — June 2017</h5>
+							<p>Working with drawings in CAD-systems.</p>
 						</td>
 					</tr>
 
