@@ -1,302 +1,281 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<meta charset="utf-8">
-	<meta name="description" content="Тишин Никита Романович"/>
-	<meta name="keywords" content="Тишин Никита, Тишин Н.Р."/>
-	<title>web developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="theme-color" content="#0a0a0f">
+	<meta name="description" content="Тишин Никита — Team Lead, Data Scientist, ML Engineer. 10+ лет опыта в разработке, машинном обучении и управлении командами.">
+	<meta name="keywords" content="Тишин Никита, Team Lead, Data Scientist, ML Engineer, Python, FastAPI, Machine Learning">
+	<title>Тишин Никита — Team Lead · Data Scientist · ML Engineer</title>
+	<link rel="icon" href="images/web.svg" type="image/svg+xml">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" sizes="192x192" href="images/web.svg">
-	<!-- Иконка Apple Touch (повторное использование 192px icon.png) -->
-	<link rel="apple-touch-icon" href="images/web.svg">
-	<!-- Значок прикрепленной вкладки Safari -->
-	<link rel="mask-icon" href="images/web.svg">
-
-
 </head>
-
 <body>
-	<div class="flex_container">
-
-
-		<div class="top_container">
-			<div class="top">
-				<h1>TEAM LEAD</h1>
+	<header class="header">
+		<nav class="nav">
+			<a href="#" class="logo">NT</a>
+			<ul class="nav-links">
+				<li><a href="#about" class="nav-link" data-i18n="nav.about">Обо мне</a></li>
+				<li><a href="#skills" class="nav-link" data-i18n="nav.skills">Навыки</a></li>
+				<li><a href="#experience" class="nav-link" data-i18n="nav.experience">Опыт</a></li>
+				<li><a href="#education" class="nav-link" data-i18n="nav.education">Образование</a></li>
+				<li><a href="#courses" class="nav-link" data-i18n="nav.courses">Курсы</a></li>
+				<li><a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a></li>
+			</ul>
+			<div class="lang-switcher">
+				<button class="lang-btn active" data-lang="ru" aria-label="Русский">RU</button>
+				<button class="lang-btn" data-lang="en" aria-label="English">EN</button>
 			</div>
-		</div>
+			<button class="nav-toggle" aria-label="Меню">
+				<span></span><span></span><span></span>
+			</button>
+		</nav>
+	</header>
 
-		<div class="menu_container">
-			<div class="menu">
-				<a class="menu_items" data-goto="1" href="#">ABOUT</a>
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<span class="hero-badge" data-i18n="hero.badge">10+ лет опыта · Удалённо</span>
+				<h1 class="hero-title">
+					<span class="hero-name" data-i18n="hero.name">Тишин Никита</span>
+					<span class="hero-roles" data-i18n="hero.roles">Team Lead · Data Scientist · ML Engineer</span>
+				</h1>
+				<p class="hero-desc" data-i18n="hero.desc">
+					Руководитель отдела инновационных технологий. Создаю корпоративные цифровые продукты, 
+					backend-платформы, ML-решения и аналитические системы. От архитектуры до production.
+				</p>
+				<div class="hero-cta">
+					<a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Связаться</a>
+					<a href="https://bento.me/tishin" target="_blank" rel="noopener" class="btn btn-outline">bento.me/tishin</a>
+				</div>
 			</div>
-
-			<div class="menu">
-				<a class="menu_items" data-goto="2" href="#">INFO</a>
+			<div class="hero-visual">
+				<div class="avatar">
+					<img src="images/me.jpg" alt="Тишин Никита" class="avatar-img">
+				</div>
 			</div>
+		</section>
 
-			<div class="menu">
-				<a class="menu_items" data-goto="3" href="#">SKILLS</a>
+		<section class="section" id="about">
+			<h2 class="section-title"><span class="section-num">01</span> <span data-i18n="sections.about">Обо мне</span></h2>
+			<div class="about-grid">
+				<div class="about-card">
+					<p data-i18n="about.p1">
+						Руководитель отдела инновационных технологий с опытом создания корпоративных цифровых продуктов, 
+						backend-платформ, аналитических систем и ML-решений для инженерного домена. 
+						Совмещаю управленческую роль с технической экспертизой: проектирую архитектуру, 
+						запускаю сервисы, автоматизирую процессы, развиваю команду и довожу R&D до production.
+					</p>
+					<p data-i18n="about.p2">Сильные стороны: Python/FastAPI, PostgreSQL, data/ML pipelines, прикладное математическое моделирование, системное мышление.</p>
+				</div>
+				<div class="about-highlights">
+					<div class="highlight">
+						<span class="highlight-icon">🏆</span>
+						<p data-i18n="about.highlight1">Финалист X Всероссийского конкурса «Наука будущего» (IT и математика)</p>
+					</div>
+					<div class="highlight">
+						<span class="highlight-icon highlight-icon--publications">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+								<path d="M9 12h6M9 16h6M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/>
+							</svg>
+						</span>
+						<p>
+							<a href="https://elibrary.ru/author_items.asp?authorid=1092289&pubrole=100&show_refs=1&show_option=0" target="_blank" rel="noopener" data-i18n="about.highlight2Link">Публикации на eLibrary</a>
+						</p>
+					</div>
+					<div class="highlight">
+						<span class="highlight-icon">🚀</span>
+						<p data-i18n="about.highlight3">Участие в стартапах, в т.ч. международных</p>
+					</div>
+					<div class="highlight">
+						<span class="highlight-icon">⛵</span>
+						<p data-i18n="about.highlight4">Парусный спорт · Гитара · Сноуборд</p>
+					</div>
+				</div>
 			</div>
+		</section>
 
-			<div class="menu">
-				<a class="menu_items" data-goto="4" href="#">EDU</a>
+		<section class="section" id="skills">
+			<h2 class="section-title"><span class="section-num">02</span> <span data-i18n="sections.skills">Навыки</span></h2>
+			<div class="skills-grid">
+				<div class="skill-category">
+					<h3>Backend & Data</h3>
+					<div class="skill-tags">
+						<span>Python</span><span>FastAPI</span><span>Django</span><span>Flask</span>
+						<span>PostgreSQL</span><span>SQLite</span><span>Redis</span>
+						<span>NumPy</span><span>SciPy</span><span>pandas</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>Machine Learning</h3>
+					<div class="skill-tags">
+						<span>TensorFlow</span><span>PyTorch</span><span>scikit-learn</span>
+						<span>CatBoost</span><span>XGBoost</span><span>Keras</span>
+						<span>Deep Learning</span><span>PySpark</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>Frontend & Desktop</h3>
+					<div class="skill-tags">
+						<span>React</span><span>Redux</span><span>Tailwind</span>
+						<span>JavaScript</span><span>PyQt5</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>DevOps & Tools</h3>
+					<div class="skill-tags">
+						<span>Docker</span><span>Git</span><span>Linux</span>
+						<span>Apache Airflow</span><span>Pytest</span>
+						<span>MATLAB</span><span>Matplotlib</span>
+					</div>
+				</div>
 			</div>
-
-			<div class="menu">
-				<a class="menu_items" data-goto="5" href="#">JOBS</a>
+			<div class="languages">
+				<p><strong data-i18n="skills.langLabel">Языки:</strong> <span data-i18n="skills.langValue">Русский (родной) · English B2 (EF SET)</span></p>
 			</div>
-		</div>
-		
-		<div class="first_container">
+		</section>
 
-			<div class="about" id="1">
-				<img src="images/pen-to-square.svg" alt="pen" class="icons">
-				<hr class="line">
-				<h3>About</h3>
-				<p class="print">At the moment I lead a group of mathematicians-developers. In the team, in addition to management, I am engaged in desktop and web development in python.</p>
-				<h3>Hobbies</h3>
-				<p><img src="images/boat.svg" alt="pen" class="icons" id="audio_svg1">
-					<audio id="audio1">
-                    <source src="ttsgb.mp3"></source>
-					</audio>
-				  <img src="images/guitar.svg" alt="guitar" class="icons" id="audio_svg2"> 
-				  	<audio id="audio2">
-                    <source src="atal.mp3"></source>
-					</audio>
-				  <img src="images/snowboard.svg" alt="snowboard" class="icons" id="audio_svg3"></p>
-				<p>Sailing | Playing guitar | Snowboarding</p>
+		<section class="section" id="experience">
+			<h2 class="section-title"><span class="section-num">03</span> <span data-i18n="sections.experience">Опыт работы</span></h2>
+			<div class="timeline">
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<span class="timeline-date" data-i18n="experience.date1">Апрель 2020 — настоящее время</span>
+						<h3>АО МОСТДОРГЕОТРЕСТ</h3>
+						<h4 data-i18n="experience.job1Title">Руководитель отдела инновационных технологий</h4>
+						<p data-i18n="experience.job1Desc">Возглавляю направление инновационных технологий: разработка и внедрение цифровых продуктов, корпоративных платформ и R&D-решений. Выстроил практику создания IT-систем с нуля. Объединил backend, аналитику данных, математическое моделирование, ML и автоматизацию.</p>
+						<ul>
+							<li data-i18n="experience.job1Li1">Система анализа данных и математического моделирования (Python, NumPy, SciPy, PyQt5, ReportLab)</li>
+							<li data-i18n="experience.job1Li2">Корпоративный дашборд и личный кабинет (FastAPI, React)</li>
+							<li data-i18n="experience.job1Li3">Платформа georeport.ru для верификации лабораторных отчётов (FastAPI, PostgreSQL)</li>
+							<li data-i18n="experience.job1Li4">Платформа хранения данных лабораторных испытаний (FastAPI, PostgreSQL, S3)</li>
+							<li data-i18n="experience.job1Li5">ML-решения для кластеризации и пространственного анализа грунтов (scikit-learn, TensorFlow, autoencoders, k-means, DBSCAN, GMM, indicator kriging)</li>
+							<li data-i18n="experience.job1Li6">ML-модели восстановления и прогнозирования инженерных параметров (CatBoost, FT-Transformer, MTL, SHAP)</li>
+							<li data-i18n="experience.job1Li7">Внутренние сервисы для лабораторных данных, автоматизация документооборота и PDF</li>
+							<li data-i18n="experience.job1Li8">Системы мониторинга и автоматизации бизнес-процессов</li>
+						</ul>
+						<p class="timeline-subtitle" data-i18n="experience.job1SectionActivity">Профессиональная и экспертная деятельность</p>
+						<ul>
+							<li data-i18n="experience.job1Act1">Представляю компанию на научных конференциях</li>
+							<li data-i18n="experience.job1Act2">Провожу лекции на курсах повышения квалификации</li>
+						</ul>
+						<p class="timeline-subtitle" data-i18n="experience.job1SectionResults">Результаты</p>
+						<ul>
+							<li data-i18n="experience.job1Result1">5+ IT-продуктов в production, рост производительности на 30–50%</li>
+							<li data-i18n="experience.job1Result2">Выстроил отдел с 2 до 7 человек</li>
+							<li data-i18n="experience.job1Result3">Практика R&D от прототипов до production</li>
+						</ul>
+					</div>
+				</article>
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<span class="timeline-date" data-i18n="experience.date2">Август 2019 — Апрель 2020</span>
+						<h3>АО МОСТДОРГЕОТРЕСТ</h3>
+						<h4 data-i18n="experience.job2Title">Инженер-расчетчик</h4>
+						<p data-i18n="experience.job2Desc">Инженерный анализ, математическое моделирование, автоматизация обработки данных. NumPy, SciPy, PyQt5, SQL, VBA. Конечно-элементные расчёты (Plaxis, Midas).</p>
+					</div>
+				</article>
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<span class="timeline-date" data-i18n="experience.date3">Февраль 2018 — Февраль 2019</span>
+						<h3>ЦПКТ АТ МАИ</h3>
+						<h4 data-i18n="experience.job3Title">Инженер-конструктор 3 категории</h4>
+						<p data-i18n="experience.job3Desc">Разработка и расчёт прочности авиационных узлов (Siemens NX, Teamcenter, AutoCAD).</p>
+					</div>
+				</article>
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<span class="timeline-date" data-i18n="experience.date4">Август 2014 — Июнь 2017</span>
+						<h3>ООО «Благодар»</h3>
+						<h4 data-i18n="experience.job4Title">Инженер-проектировщик</h4>
+						<p data-i18n="experience.job4Desc">Разработка чертежей в CAD-системах.</p>
+					</div>
+				</article>
 			</div>
+		</section>
 
-
-			<div class="info" id="2">
-				<IMG class="displayed" src="images/me.jpg" alt="me" class="photo">
-				<hr class="line">
-				<p><b>Tishin Nikita</b></p>
-				<p><b>03.02.1993</b></p>
-				<p><a href="tel:+79096562200"><b>+7 (909) 656-22-00</b></a></p>
-				<p><a href="mailto:tnick1502@mail.ru"><b>tnick1502@mail.ru</b></a></p>
-
-				<p><a href="https://github.com/tnick1502" target="_blank"><img src="images/git-alt.svg" width="35" height="35" alt="git"></a> 
-					<a href="https://t.me/itishinn" target="_blank"><img src="images/telegram.svg" width="35" height="35" alt="tg"></a>
-					<a href="https://wa.clck.bar/79096562200" target="_blank"><img src="images/whatsapp.svg" width="35" height="35" alt="tg"></a>
-					<a href="https://vk.com/tnick" target="_blank"><img src="images/vk.svg" width="35" height="35" alt="vk"></a>
-					<a href="https://www.linkedin.com/in/nikita-tishin-496188166" target="_blank"><img src="images/icons8-linkedin-circled-100.svg" width="35" height="35" alt="in"></a></p>
-
-
-
-
+		<section class="section" id="education">
+			<h2 class="section-title"><span class="section-num">04</span> <span data-i18n="sections.education">Образование</span></h2>
+			<div class="education-grid">
+				<div class="edu-card">
+					<span class="edu-year">2026</span>
+					<h3 data-i18n="education.phd">Кандидат наук</h3>
+					<p>МГТУ им. Н.Э. Баумана</p>
+					<p class="edu-detail" data-i18n="education.phdDetail">Факультет информатики и систем управления · Системный анализ, управление и обработка информации</p>
+				</div>
+				<div class="edu-card">
+					<span class="edu-year">2019</span>
+					<h3 data-i18n="education.master">Магистр</h3>
+					<p>МГТУ МИРЭА</p>
+					<p class="edu-detail" data-i18n="education.masterDetail">Факультет кибернетики · Управление в технических системах</p>
+				</div>
+				<div class="edu-card">
+					<span class="edu-year">2017</span>
+					<h3 data-i18n="education.bachelor">Бакалавр</h3>
+					<p>МГТУ им. Н.Э. Баумана</p>
+					<p class="edu-detail" data-i18n="education.bachelorDetail">Факультет робототехники и комплексной автоматизации · Прикладная механика</p>
+				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="second_container">
-			
-			<div class="skills" id="3">
-				<img src="images/star.svg" alt="star" class="icons">
-				<hr class="line">
-
-				<h3>Skills</h3>
-
-				<table>
-					<tr>
-						<td width="5%"><b>{</b></td><td width="5%"></td><td></td>
-					</tr>
-					<tr>
-						<td  width="5%"></td><td width="5%"><b>"python":</b></td><td></td>
-					</tr>
-					<tr>
-						<td  width="5%"></td><td width="5%"></td><td><b>[fastapi, django, flask, numpy, scipy, reportlab, pyqt5],</b></td>
-					</tr>
-
-
-					<tr>
-						<td  width="5%"></td><td width="5%"><b>"database":</b></td><td></td>
-					</tr>
-					<tr>
-						<td  width="5%"></td><td width="5%"></td><td><b>[postgreSQL, sqlite, redis],</b></td>
-					</tr>
-
-					<tr>
-						<td  width="5%"></td><td width="5%"><b>"front":</b></td><td></td>
-					</tr>
-					<tr>
-						<td  width="5%"></td><td width="5%"></td><td><b>[react, tailwind, redux],</b></td>
-					</tr>
-
-
-					<tr>
-						<td  width="5%"></td><td width="5%"><b>"devops":</b></td><td></td>
-					</tr>
-					<tr>
-						<td  width="5%"></td><td width="5%"></td><td><b>[git, docker],</b></td>
-					</tr>
-
-
-					<tr>
-						<td  width="5%"></td><td width="5%"><b>"other":</b></td><td></td>
-					</tr>
-					<tr>
-						<td  width="5%"></td><td width="5%"></td><td><b>[matlab, mathcad],</b></td>
-					</tr>
-
-					<tr>
-						<td  width="5%"><b>}</b></td><td width="5%"></td><td></td>
-					</tr>
-
-			</table>
-
+		<section class="section" id="courses">
+			<h2 class="section-title"><span class="section-num">05</span> <span data-i18n="courses.title">Курсы повышения квалификации</span></h2>
+			<div class="courses-grid">
+				<div class="course-card">
+					<span class="course-year">2025</span>
+					<h3 data-i18n="courses.course1">Аэродинамика и прочность</h3>
+					<p class="course-org" data-i18n="courses.course1Org">МГТУ им. Н.Э. Баумана</p>
+				</div>
+				<div class="course-card">
+					<span class="course-year">2025</span>
+					<h3 data-i18n="courses.course2">Нейросети и Deep Learning</h3>
+					<p class="course-org" data-i18n="courses.course2Org">ВМК МГУ им. Ломоносова</p>
+				</div>
+				<div class="course-card">
+					<span class="course-year">2025</span>
+					<h3 data-i18n="courses.course3">Управление высокотехнологичными проектами</h3>
+					<p class="course-org" data-i18n="courses.course3Org">МГТУ им. Н.Э. Баумана</p>
+				</div>
+				<div class="course-card">
+					<span class="course-year">2017</span>
+					<h3 data-i18n="courses.course4">Siemens NX</h3>
+					<p class="course-org" data-i18n="courses.course4Org">ЦПКТ АТ МАИ</p>
+				</div>
 			</div>
+		</section>
 
-			<div class="education" id="4">
-				<img src="images/book-outline.svg" alt="star" class="icons">
-				<hr class="line">
-				<h3>Education</h3>
-				<ul>
-					<li>
-						<h4>Bauman Moscow State Technical University, 2017</h4>
-						<p>Bachelor</p>
-						<p>Faculty of Robotics and Integrated Automation, Department of Applied Mechanics</p>
-					</li>
-
-					<li>
-						<h4>Russian Technological University MIREA, 2019</h4>
-						<p>Master of Science</p>
-						<p>Faculty of Cybernetics, Department of Control in Technical Systems</p>
-					</li>
-
-
-				</ul>
+		<section class="section" id="contact">
+			<h2 class="section-title"><span class="section-num">06</span> <span data-i18n="sections.contact">Контакты</span></h2>
+			<div class="contact-card">
+				<div class="contact-info">
+					<p><strong data-i18n="contact.name">Тишин Никита Романович</strong></p>
+					<p data-i18n="contact.location">Москва · Россия</p>
+					<p><a href="tel:+79096562200">+7 (909) 656-22-00</a></p>
+					<p><a href="mailto:tnick1502@mail.ru">tnick1502@mail.ru</a></p>
+					<p>Telegram: <a href="https://t.me/itishinn" target="_blank" rel="noopener">@itishinn</a></p>
+					<p>LinkedIn: <a href="https://www.linkedin.com/in/nikita-tishin-496188166" target="_blank" rel="noopener">linkedin.com/in/nikita-tishin</a></p>
+				</div>
 			</div>
-		</div>
+			<p class="contact-cta">
+				<strong data-i18n="contact.positions">Желаемые позиции:</strong> <span data-i18n="contact.positionsVal">Тимлид, Data Scientist, ML Engineer</span> · 
+				<strong data-i18n="contact.format">Формат:</strong> <span data-i18n="contact.formatVal">Удалённо · Полная/частичная занятость, проектная работа</span>
+			</p>
+		</section>
+	</main>
 
-		<div class="third_container" id="5">
-			<div class="work">
-				<img src="images/code.svg" alt="star" class="icons">
-				<hr class="line">
-				<h3>Experience</h3>
-				<table>
+	<footer class="footer">
+		<p><span data-i18n="footer">© 2025 Тишин Никита</span> · <a href="https://github.com/tnick1502" target="_blank" rel="noopener">tnick1502</a></p>
+	</footer>
 
-					<tr>
-						<td class="table_work_data">
-							<h4>AO MOSTDORGEOTREST</h4>
-							<h5>Head of Innovative Technologies Department</h5>
-							<h5>April 2020 — now</h5>
-
-							<p>Main used frameworks and libraries:</p> 
-							<p>backend: fastapi, numpy, scipy, postgresql, django.</p>
-							<p>frontend: js, react, tailwind, redux</p>
-							<p>desktop: pyqt5</p>
-
-							<p>During the work the following projects were implemented:</p>
-
-							<ul>
-								<li>
-									<p class="bolt_p">Complex for processing mechanical and dynamic tests in heterogeneous environments.</p><p>The complex is written in Python. The system model was written using the numpy and scipy libraries. The interface is written in pyqt and matplotlib. Reportlab is used to generate reports. At first, the whole complex was programmed personally, later, when the team expanded, new types of processing and modeling were developed by new employees.</p>
-								</li>
-
-								<li>
-									<p class="bolt_p">Company Dashboard.</p><p>The essence of the project: various data is parsed in a separate stream from different documents of the company (issued protocols, the amount of payments, etc.) and written to the database, then the api provides data for the front, inscribed on the react. Some data is available only to authorized users. Stack: fastapi, react, sqlite3.</p>
-								</li>
-
-								<li>
-									<p class="bolt_p">Service georeport.ru for authentication of test reports.</p><p>Service for data protection of laboratory reports. Duplicates report data to the server and provides this data via a special link, which is placed on the report in the form of a qr code. Stack: fastapi, postgresql, js.</p>
-								</li>
-
-								<li>
-									<p class="bolt_p">Telegram bot.</p><p>Stack: aiogram and aiohttp. For parsing data and informing the company's employees about the current salary, employees birthdays, etc. Connected to the dashboard server.</p>
-								</li>
-
-								<li>
-									<p class="bolt_p">Various projects for business automation.</p><p>Scripts for watermarking or redistribution of pdf reports and many others.</p>
-								</li>
-							</ul>
-
-							<p>As the head of the department, I am engaged in the formation of a development team, the recruitment of employees in the department and their training.
-
-							Every year I represent the company at scientific conferences in the field of engineering surveys, design and construction, MCE complexes.
-
-							I give lectures at advanced training courses at the company's training center.</p>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="table_work_data">
-							<hr class="line">
-							<h4>AO MOSTDORGEOTREST</h4>
-							<h5>Strength engineer</h5>
-							<h5>August 2019 — April 2020</h5>
-							<p>Laboratory determination of the mechanical and dynamic parameters of soils, writing programs for processing the results of the experiment in python, VBA. Carrying out FE calculations (plaxis, midas).
-							Working with databases. Working with libraries matplotlib, numpy, scipy, pyqt5, working with sqlite3.</p>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="table_work_data">
-							<hr class="line">
-							<h4>Center for Design Technologies of Aviation Engineering of the Moscow Aviation Institute</h4>
-							<h5>Design engineer, 3kat</h5>
-							<h5>February 2018 — February 2019</h5>
-							<p>Development of aircraft parts and assemblies in the Siemens NX PC, drawings in Autocad and Compass, maintenance of design documentation in Siemens Teamcenter, calculation of the strength of the assemblies.</p>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="table_work_data">
-							<hr class="line">
-							<h4>OOO Blagodar</h4>
-							<h5>Engineer</h5>
-							<h5>August 2014 — June 2017</h5>
-							<p>Working with drawings in CAD-systems.</p>
-						</td>
-					</tr>
-
-				</table>
-
-			</div>
-		</div>
-
-	</div>
-	<script src="script.js" type="text/javascript"></script>
-	<script src="anime.min.js" type="text/javascript"></script>
-	<script src="typeit.min.js"></script>
-	<script>
-		anime({
-			targets: '.about',
-			opacity: 1,
-			duration: 1500,
-			easing: 'easeInOutQuad',
-		});
-		
-		anime({
-			targets: '.info',
-			opacity: 1,
-			duration: 1500,
-			easing: 'easeInOutQuad',
-		});
-		
-		anime({
-			targets: '.skills',
-			opacity: 1,
-			duration: 1500,
-			easing: 'easeInOutQuad',
-		});
-		
-		anime({
-			targets: '.education',
-			opacity: 1,
-			duration: 1500,
-			easing: 'easeInOutQuad',
-		});
-
-		anime({
-			targets: '.work',
-			opacity: 1,
-			duration: 1500,
-			easing: 'easeInOutQuad',
-		});
-
-		new TypeIt(".print").go();
-
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2q0HtASz7O6BmEvH19J4P2Fk/VCHxrvRrjL+0maQ=" crossorigin="anonymous"></script>
+	<script src="i18n.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

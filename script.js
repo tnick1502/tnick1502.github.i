@@ -1,116 +1,102 @@
-document.addEventListener("DOMContentLoaded", () => {
-})
+let currentLang = localStorage.getItem('lang') || 'ru';
 
-var div4 = document.querySelector('#audio_svg1') 
-var audio1 = document.querySelector('#audio1')
-div4.addEventListener("mouseenter", function(){
-  audio1.play()
+function getNested(obj, path) {
+	return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+}
+
+function applyTranslations(lang) {
+	document.documentElement.lang = lang;
+	document.title = i18n[lang].title || document.title;
+	currentLang = lang;
+	localStorage.setItem('lang', lang);
+
+	document.querySelectorAll('.lang-btn').forEach(btn => {
+		btn.classList.toggle('active', btn.dataset.lang === lang);
+	});
+
+	document.querySelectorAll('[data-i18n]').forEach(el => {
+		const key = el.getAttribute('data-i18n');
+		let text = getNested(i18n[lang], key);
+		if (text) {
+			text = String(text).replace('{year}', new Date().getFullYear());
+			if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+				el.placeholder = text;
+			} else {
+				el.textContent = text;
+			}
+		}
+	});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	applyTranslations(currentLang);
+
+	document.querySelectorAll('.lang-btn').forEach(btn => {
+		btn.addEventListener('click', () => {
+			applyTranslations(btn.dataset.lang);
+		});
+	});
+
+	// Mobile menu toggle
+	const navToggle = document.querySelector('.nav-toggle');
+	const nav = document.querySelector('.nav');
+
+	if (navToggle && nav) {
+		navToggle.addEventListener('click', () => {
+			nav.classList.toggle('open');
+		});
+
+		document.querySelectorAll('.nav-link').forEach(link => {
+			link.addEventListener('click', () => {
+				nav.classList.remove('open');
+			});
+		});
+	}
+
+	// Smooth scroll for anchor links
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			const href = this.getAttribute('href');
+			if (href === '#') return;
+			const target = document.querySelector(href);
+			if (target) {
+				e.preventDefault();
+				target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		});
+	});
+
+	// Header background on scroll
+	const header = document.querySelector('.header');
+	if (header) {
+		const updateHeader = () => {
+			header.style.background = window.scrollY > 50
+				? 'rgba(10, 10, 15, 0.95)'
+				: 'rgba(10, 10, 15, 0.85)';
+		};
+		window.addEventListener('scroll', updateHeader, { passive: true });
+	}
+
+	// Intersection Observer for fade-in animations
+	if (typeof anime !== 'undefined') {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					anime({
+						targets: entry.target,
+						opacity: [0, 1],
+						translateY: [20, 0],
+						duration: 600,
+						easing: 'easeOutQuad'
+					});
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+		document.querySelectorAll('.section, .timeline-item, .edu-card, .skill-category, .course-card').forEach(el => {
+			el.style.opacity = '0';
+			observer.observe(el);
+		});
+	}
 });
-div4.addEventListener("mouseout", function(){
-  audio1.pause()
-  audio1.currentTime = 0.0;
-});
-
-
-var div5 = document.querySelector('#audio_svg2') 
-var audio2 = document.querySelector('#audio2')
-div5.addEventListener("mouseenter", function(){
-  audio2.play()
-});
-div5.addEventListener("mouseout", function(){
-  audio2.pause()
-  audio2.currentTime = 0.0;
-});
-
-const navItems = document.querySelectorAll(".menu_items[data-goto]");
-if (navItems.length > 0) {
-  navItems.forEach((item) => {
-    item.addEventListener("click", onNavItemClick);
-  });
-
-  function onNavItemClick(event) {
-    const navItem = event.target;
-    if (navItem.dataset.goto && document.getElementById(navItem.dataset.goto)) {
-      const gotoBlock = document.getElementById(navItem.dataset.goto);
-      const gotoBlockValue =
-        gotoBlock.getBoundingClientRect().top + pageYOffset;
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: "smooth",
-      });
-      event.preventDefault();
-    }
-  }
-}
-
-var buttonEl = document.querySelector('#audio_svg1');
-
-function animate() {
-  anime.remove(buttonEl);
-  anime({
-    targets: buttonEl,
-    translateY: [0, -15],
-    rotate: [-10, 10],
-    direction: 'alternate',
-    easing: 'easeInOutSine',
-    loop: true,
-  });
-}
-
-function stop() {
-  anime.remove(buttonEl);
-  anime({
-    targets: buttonEl,
-    translateY: 0,
-    rotate: 0,
-    easing: 'linear',
-  });
-}
-
-buttonEl.addEventListener('mouseenter', animate, false);
-buttonEl.addEventListener('mouseleave', stop, false);
-
-
-
-var buttonE2 = document.querySelector('#audio_svg2');
-
-function animate2() {
-  anime.remove(buttonE2);
-  anime({
-    targets: buttonE2,
-    rotate: [0, 30],
-    direction: 'alternate',
-    easing: 'easeInOutSine',
-    loop: true,
-  });
-}
-
-function stop2() {
-  anime.remove(buttonE2);
-  anime({
-    targets: buttonE2,
-    rotate: 0,
-    easing: 'linear',
-  });
-}
-
-
-buttonE2.addEventListener('mouseenter', animate2, false);
-buttonE2.addEventListener('mouseleave', stop2, false);
-
-
-
-var buttonE3 = document.querySelector('#audio_svg3');
-
-function animate3() {
-  anime.remove(buttonE3);
-  anime({
-    targets: buttonE3,
-    rotate: 360,
-    easing: 'easeInOutSine',
-  });
-}
-
-
-buttonE3.addEventListener('mouseenter', animate3, false);
-buttonE3.addEventListener('mouseleave', stop3, false);

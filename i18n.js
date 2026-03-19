@@ -1,0 +1,160 @@
+const i18n = {
+	ru: {
+		title: 'Тишин Никита — Team Lead · Data Scientist · ML Engineer',
+		nav: { about: 'Обо мне', skills: 'Навыки', experience: 'Опыт', education: 'Образование', courses: 'Курсы', contact: 'Контакты' },
+		hero: {
+			badge: '10+ лет опыта · Удалённо',
+			name: 'Тишин Никита',
+			roles: 'Team Lead · Data Scientist · ML Engineer',
+			desc: 'Руководитель отдела инновационных технологий. Создаю корпоративные цифровые продукты, backend-платформы, ML-решения и аналитические системы. От архитектуры до production.',
+			cta: 'Связаться'
+		},
+		sections: { about: 'Обо мне', skills: 'Навыки', experience: 'Опыт работы', education: 'Образование', courses: 'Курсы', contact: 'Контакты' },
+		about: {
+			p1: 'Руководитель отдела инновационных технологий с опытом создания корпоративных цифровых продуктов, backend-платформ, аналитических систем и ML-решений для инженерного домена. Совмещаю управленческую роль с технической экспертизой: проектирую архитектуру, запускаю сервисы, автоматизирую процессы, развиваю команду и довожу R&D до production.',
+			p2: 'Сильные стороны: Python/FastAPI, PostgreSQL, data/ML pipelines, прикладное математическое моделирование, системное мышление.',
+			highlight1: 'Финалист X Всероссийского конкурса «Наука будущего» (IT и математика)',
+			highlight2: 'Научные публикации',
+			highlight2Link: 'Публикации на eLibrary',
+			highlight3: 'Участие в стартапах, в т.ч. международных',
+			highlight4: 'Парусный спорт · Гитара · Сноуборд'
+		},
+		skills: { langLabel: 'Языки:', langValue: 'Русский (родной) · English B2 (EF SET)' },
+		experience: {
+			date1: 'Апрель 2020 — настоящее время',
+			date2: 'Август 2019 — Апрель 2020',
+			date3: 'Февраль 2018 — Февраль 2019',
+			date4: 'Август 2014 — Июнь 2017',
+			job1Title: 'Руководитель отдела инновационных технологий',
+			job2Title: 'Инженер-расчетчик',
+			job3Title: 'Инженер-конструктор 3 категории',
+			job4Title: 'Инженер-проектировщик',
+			job1Desc: 'Возглавляю направление инновационных технологий, отвечая за разработку и внедрение цифровых продуктов, корпоративных платформ и прикладных R&D-решений для инженерного и лабораторного контура компании. С нуля выстроил практику создания внутренних IT-систем: от постановки задачи и проектирования архитектуры до вывода решений в эксплуатацию, масштабирования и развития команды. Объединил в рамках одного направления backend-разработку, аналитику данных, математическое моделирование, ML и автоматизацию бизнес-процессов.',
+			job1Li1: 'Разработал и внедрил систему анализа данных и математического моделирования для исследования динамических процессов в гетерогенных средах, включая расчётные модули, пользовательский интерфейс и генерацию отчётности (Python, NumPy, SciPy, PyQt5, ReportLab).',
+			job1Li2: 'Запустил корпоративный дашборд и личный кабинет сотрудников для визуализации операционных данных, централизации внутренних сервисов и повышения прозрачности рабочих процессов (FastAPI, React).',
+			job1Li3: 'Разработал и вывел в эксплуатацию georeport.ru — платформу для защиты, верификации и распространения лабораторных отчётов с использованием QR-кодов и централизованного доступа к документам (FastAPI, PostgreSQL).',
+			job1Li4: 'Спроектировал и реализовал платформу комплексного хранения данных лабораторных испытаний с API-доступом, гибридной моделью хранения структурированных данных и файлов, а также поддержкой object storage (FastAPI, PostgreSQL, S3/object storage).',
+			job1Li5: 'Создал ML-решения для кластеризации и пространственного анализа грунтов, объединив методы снижения размерности, кластеризации и геостатистического моделирования для прикладных инженерных задач (scikit-learn, TensorFlow, autoencoders, k-means, DBSCAN, GMM, indicator kriging).',
+			job1Li6: 'Разработал ML-модели восстановления и прогнозирования инженерных параметров по лабораторным данным с использованием ансамблевых подходов, multi-task learning и интерпретируемого ML (CatBoost, FT-Transformer, MTL, SHAP).',
+			job1Li7: 'Реализовал внутренние сервисы для хранения, обработки, интеграции и контроля качества лабораторных данных, а также инструменты автоматизации документооборота, обработки и защиты PDF-документов.',
+			job1Li8: 'Внедрил системы мониторинга и автоматизации бизнес-процессов, что повысило прозрачность операций, сократило долю ручных действий и улучшило управляемость внутренних процессов.',
+			job1Act1: 'Представляю компанию на профильных научных конференциях и отраслевых мероприятиях в области инженерных изысканий, проектирования, строительства и численного моделирования.',
+			job1Act2: 'Участвую в обучении специалистов: провожу лекции и занятия на курсах повышения квалификации в учебном центре компании.',
+			job1Result1: 'Запустил 5+ крупных IT-продуктов и внутренних платформ, используемых в рабочем контуре компании. Повысил производительность подразделений на 30–50% за счёт системной автоматизации, цифровизации и внедрения собственных инструментов.',
+			job1Result2: 'Выстроил и развил отдел с 2 до 7 человек: участвовал в найме, адаптации, обучении и развитии сотрудников.',
+			job1Result3: 'Сформировал внутри компании практику R&D-разработки: от прикладных исследований и прототипов до production-внедрения.',
+			job1SectionActivity: 'Профессиональная и экспертная деятельность',
+			job1SectionResults: 'Результаты',
+			job2Desc: 'На этой позиции отвечал за инженерный анализ, математическое моделирование и автоматизацию обработки данных для решения прикладных геотехнических задач. Проводил анализ механических свойств грунтов и автоматизировал обработку лабораторных данных, повышая скорость и воспроизводимость инженерных расчётов (NumPy, SciPy, PyQt5, SQL, VBA). Также выполнял конечно-элементные расчёты и разрабатывал математические модели для прикладных задач геотехнического анализа и проектирования (Plaxis, Midas).',
+			job3Desc: 'Разработка и расчёт прочности авиационных узлов (Siemens NX, Teamcenter, AutoCAD).',
+			job4Desc: 'Разработка чертежей в CAD-системах.'
+		},
+		education: {
+			phd: 'Кандидат наук',
+			master: 'Магистр',
+			bachelor: 'Бакалавр',
+			phdDetail: 'Факультет информатики и систем управления · Системный анализ, управление и обработка информации',
+			masterDetail: 'Факультет кибернетики · Управление в технических системах',
+			bachelorDetail: 'Факультет робототехники и комплексной автоматизации · Прикладная механика'
+		},
+		courses: {
+			title: 'Курсы повышения квалификации',
+			course1: 'Аэродинамика и прочность',
+			course1Org: 'МГТУ им. Н.Э. Баумана',
+			course2: 'Нейросети и Deep Learning',
+			course2Org: 'ВМК МГУ им. Ломоносова',
+			course3: 'Управление высокотехнологичными проектами',
+			course3Org: 'МГТУ им. Н.Э. Баумана',
+			course4: 'Siemens NX',
+			course4Org: 'ЦПКТ АТ МАИ'
+		},
+		contact: {
+			name: 'Тишин Никита Романович',
+			location: 'Москва · Россия',
+			positions: 'Желаемые позиции:',
+			positionsVal: 'Тимлид, Data Scientist, ML Engineer',
+			format: 'Формат:',
+			formatVal: 'Удалённо · Полная/частичная занятость, проектная работа'
+		},
+		footer: '© {year} Тишин Никита'
+	},
+	en: {
+		title: 'Nikita Tishin — Team Lead · Data Scientist · ML Engineer',
+		nav: { about: 'About', skills: 'Skills', experience: 'Experience', education: 'Education', courses: 'Courses', contact: 'Contact' },
+		hero: {
+			badge: '10+ years experience · Remote',
+			name: 'Nikita Tishin',
+			roles: 'Team Lead · Data Scientist · ML Engineer',
+			desc: 'Head of Innovative Technologies Department. Building corporate digital products, backend platforms, ML solutions and analytics systems. From architecture to production.',
+			cta: 'Get in touch'
+		},
+		sections: { about: 'About', skills: 'Skills', experience: 'Experience', education: 'Education', courses: 'Courses', contact: 'Contact' },
+		about: {
+			p1: 'Head of Innovative Technologies with experience creating corporate digital products, backend platforms, analytics systems and ML solutions for the engineering domain. Combining management with deep technical expertise: designing system architecture, launching services, automating processes, growing teams and taking R&D from idea to production.',
+			p2: 'Core strengths: Python/FastAPI, PostgreSQL, data/ML pipelines, applied mathematical modeling, systems thinking.',
+			highlight1: 'Finalist of X All-Russian Research Competition «Science of the Future» (IT & Mathematics)',
+			highlight2: 'Scientific publications',
+			highlight2Link: 'Publications on eLibrary',
+			highlight3: 'Startup experience, including international',
+			highlight4: 'Sailing · Guitar · Snowboarding'
+		},
+		skills: { langLabel: 'Languages:', langValue: 'Russian (native) · English B2 (EF SET)' },
+		experience: {
+			date1: 'April 2020 — Present',
+			date2: 'August 2019 — April 2020',
+			date3: 'February 2018 — February 2019',
+			date4: 'August 2014 — June 2017',
+			job1Title: 'Head of Innovative Technologies Department',
+			job2Title: 'Strength Engineer',
+			job3Title: 'Design Engineer, 3rd category',
+			job4Title: 'Design Engineer',
+			job1Desc: 'Leading the innovative technologies division, responsible for development and deployment of digital products, corporate platforms and applied R&D solutions for the company\'s engineering and laboratory operations. Built internal IT systems practice from scratch: from task definition and architecture design to deployment, scaling and team development. Unified backend development, data analytics, mathematical modeling, ML and business process automation under one direction.',
+			job1Li1: 'Developed and deployed a data analysis and mathematical modeling system for studying dynamic processes in heterogeneous media, including computational modules, user interface and report generation (Python, NumPy, SciPy, PyQt5, ReportLab).',
+			job1Li2: 'Launched corporate dashboard and employee portal for operational data visualization, centralization of internal services and improved transparency of workflows (FastAPI, React).',
+			job1Li3: 'Developed and deployed georeport.ru — a platform for protection, verification and distribution of laboratory reports using QR codes and centralized document access (FastAPI, PostgreSQL).',
+			job1Li4: 'Designed and implemented a comprehensive laboratory test data storage platform with API access, hybrid storage model for structured data and files, and object storage support (FastAPI, PostgreSQL, S3/object storage).',
+			job1Li5: 'Created ML solutions for soil clustering and spatial analysis, combining dimensionality reduction, clustering and geostatistical modeling methods for applied engineering tasks (scikit-learn, TensorFlow, autoencoders, k-means, DBSCAN, GMM, indicator kriging).',
+			job1Li6: 'Developed ML models for recovery and prediction of engineering parameters from laboratory data using ensemble approaches, multi-task learning and interpretable ML (CatBoost, FT-Transformer, MTL, SHAP).',
+			job1Li7: 'Implemented internal services for storage, processing, integration and quality control of laboratory data, as well as document workflow automation, processing and PDF protection tools.',
+			job1Li8: 'Deployed monitoring and business process automation systems, improving operational transparency, reducing manual work and enhancing internal process management.',
+			job1Act1: 'Represent the company at professional scientific conferences and industry events in engineering surveys, design, construction and numerical modeling.',
+			job1Act2: 'Participate in specialist training: deliver lectures and classes at professional development courses in the company\'s training center.',
+			job1Result1: 'Launched 5+ major IT products and internal platforms used in the company\'s operations. Increased department productivity by 30–50% through systematic automation, digitalization and deployment of proprietary tools.',
+			job1Result2: 'Built and grew the department from 2 to 7 people: participated in hiring, onboarding, training and development of employees.',
+			job1Result3: 'Established R&D development practice within the company: from applied research and prototypes to production deployment.',
+			job1SectionActivity: 'Professional and expert activity',
+			job1SectionResults: 'Results',
+			job2Desc: 'In this role, was responsible for engineering analysis, mathematical modeling and data processing automation for solving applied geotechnical problems. Conducted analysis of soil mechanical properties and automated laboratory data processing, increasing the speed and reproducibility of engineering calculations (NumPy, SciPy, PyQt5, SQL, VBA). Also performed finite element calculations and developed mathematical models for applied geotechnical analysis and design tasks (Plaxis, Midas).',
+			job3Desc: 'Aircraft parts and assemblies development, strength calculations (Siemens NX, Teamcenter, AutoCAD).',
+			job4Desc: 'CAD drawings development.'
+		},
+		education: {
+			phd: 'PhD (Candidate of Sciences)',
+			master: 'Master of Science',
+			bachelor: 'Bachelor',
+			phdDetail: 'Faculty of Informatics and Control Systems · System analysis, control and information processing',
+			masterDetail: 'Faculty of Cybernetics · Control in technical systems',
+			bachelorDetail: 'Faculty of Robotics and Integrated Automation · Applied mechanics'
+		},
+		courses: {
+			title: 'Professional Development Courses',
+			course1: 'Aerodynamics and Strength',
+			course1Org: 'Bauman Moscow State Technical University',
+			course2: 'Neural Networks and Deep Learning',
+			course2Org: 'Lomonosov Moscow State University, Faculty of Computational Mathematics',
+			course3: 'High-Tech Project Management',
+			course3Org: 'Bauman Moscow State Technical University',
+			course4: 'Siemens NX',
+			course4Org: 'MAI Design Technology Center'
+		},
+		contact: {
+			name: 'Nikita Tishin',
+			location: 'Moscow · Russia',
+			positions: 'Target roles:',
+			positionsVal: 'Team Lead, Data Scientist, ML Engineer',
+			format: 'Format:',
+			formatVal: 'Remote · Full-time, part-time, project-based'
+		},
+		footer: '© {year} Nikita Tishin'
+	}
+};
